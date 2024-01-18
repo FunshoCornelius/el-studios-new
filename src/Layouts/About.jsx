@@ -1,5 +1,6 @@
 import React from "react";
 import Team from "../Components/Team";
+import SectionHeader from "../Components/SectionHeader";
 
 const aboutData = [
   {
@@ -26,7 +27,7 @@ const AboutUs = () => {
   return (
     <>
       {aboutData.map((data) => (
-        <article key={data.id} className="px-20 py-20 mt-2 border-t">
+        <article key={data.id} className="px-20 py-20 mb-2 border-t">
           <h2 className="font-extrabold uppercase text-6xl text-white">
             {data.title}
           </h2>
@@ -39,12 +40,12 @@ const AboutUs = () => {
 
 const About = () => {
   return (
-    <section className="bg-elPurple">
+    <section className="bg-elPurple py-[5rem]">
+      <SectionHeader color={"elLilac"} section={"ABOUT"} />
       <div id="about" className="bg-elPurple text-elLilac  h-[100vh]">
-        <span className="font-semibold text-xl px-20">ABOUT US</span>
         <AboutUs />
       </div>
-      <div>
+      <div className="min-h-max">
         <Team />
       </div>
     </section>

@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding: 10rem;
   font-size: 62.5%;
 }
 body {
@@ -29,6 +30,11 @@ body {
 .grid-item-6 {
   grid-column: 3/5;
   grid-row: 3/3;
+}
+
+.swiper-wrapper {
+  display: flex;
+  gap: 3rem;
 }
 
 @tailwind base;
