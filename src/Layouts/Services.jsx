@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeader from "../Components/SectionHeader";
 // import { register } from "swiper/element/bundle";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // import required modules
 import {
@@ -78,6 +80,7 @@ const SliderFrameThree = () => {
     <div className="flex gap-[5rem] w-[100%]">
       <Slide
         name="Graphics Design"
+        om
         img={graphics}
         description="Our graphics design team specializes in creating high-quality and visually appealing designs for a wide range of applications, including branding, advertising, packaging, and digital media. We work closely with clients to bring their vision to life"
       />{" "}
@@ -92,9 +95,18 @@ const SliderFrameThree = () => {
 
 // Service section component containg the 3 slider frames
 const Services = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section id="services" className="bg-elPurple">
-      <SectionHeader color={"elLilac"} section={"SERVICES"} />
+      <SectionHeader
+        color={"elLilac"}
+        section={"SERVICES"}
+        heading={"Our team is proficient in the following areas"}
+        animate={"zoom-out"}
+      />
       <div className="py-[10rem] px-[5rem] text-white">
         <Swiper
           slidesPerView={1}

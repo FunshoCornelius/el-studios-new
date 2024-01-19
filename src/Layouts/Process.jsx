@@ -1,10 +1,11 @@
 import React from "react";
+import SectionHeader from "../Components/SectionHeader";
 
 const Process = () => {
   return (
-    <section id="process" className="bg-secColor h-[100vh]">
+    <section id="process" className="bg-elPurple h-[100vh]">
       {" "}
-      Process
+      <SectionHeader section={"PROCESS"} color={"elLilac"} />
     </section>
   );
 };

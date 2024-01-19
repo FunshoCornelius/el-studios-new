@@ -17,6 +17,7 @@ const Main = () => {
       <Gallery />
       <Process />
       <Pricing />
+      <ElGradientBg />
     </main>
   );
 };
