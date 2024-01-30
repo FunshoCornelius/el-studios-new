@@ -10,6 +10,10 @@ import para from "../images/el-client-para.png";
 import sf from "../images/el-client-sf.png";
 import ybnl from "../images/el-client-ybnl.png";
 import wg from "../images/el-client-wg.png";
+import lw from "../images/el-client-lw.png";
+import lcc from "../images/el-client-lcc.png";
+import near from "../images/el-client-near.png";
+import vote from "../images/el-client-vote.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -28,6 +32,10 @@ const Clients = () => {
     { img: wg, alt: "WG Films" },
     { img: kininso, alt: "Kininso Koncepts" },
     { img: oxygen, alt: "Oxygen Films" },
+    { img: lw, alt: "Love World" },
+    { img: lcc, alt: "Life Changers Church" },
+    { img: near, alt: "Near Hub" },
+    { img: vote, alt: "Vote023" },
   ];
 
   const Client = () => {

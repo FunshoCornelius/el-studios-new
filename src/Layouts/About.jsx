@@ -54,14 +54,14 @@ const About = () => {
           >
             {hoveredId === id ? (
               <p
-                className="transition-all duration-500 text-[1.8rem] w-[100%] pl-[40%]"
+                className="transition-all duration-500 text-[1.5vw] w-[100%] pl-[40%]"
                 data-aos={"fade-left"}
               >
                 {description}
               </p>
             ) : (
               <h2
-                className="font-bold text-8xl transition-all duration-300"
+                className="font-bold text-[5vw] transition-all duration-300"
                 data-aos={"fade-right"}
               >
                 {title.toLocaleUpperCase()}

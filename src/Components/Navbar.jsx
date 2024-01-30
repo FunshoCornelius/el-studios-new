@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
+import { IoMdMenu } from "react-icons/io";
 // import { useRef } from "react";
 // import { Link } from "react-scroll";
 
@@ -52,9 +53,10 @@ const navLink = linkTitle.map((link) => (
 
 const Navbar = () => {
   return (
-    <nav className=" fixed w-[100%] z-10 flex justify-between items-center bg-elPurple text-white px-10 py-5">
+    <nav className=" fixed w-[100%] z-10 flex justify-between items-center  bg-elPurple text-white px-10 py-5">
       <Logo />
-      <ul className="flex gap-[2rem]">{navLink}</ul>
+      <ul className="sm:flex gap-[2rem] hidden ">{navLink}</ul>
+      <IoMdMenu className="sm:hidden w-[1.8rem]" />
     </nav>
   );
 };

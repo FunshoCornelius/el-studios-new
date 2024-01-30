@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../images/el-gallery-1.png";
-import img2 from "../images/el-gallery-2.png";
-import img3 from "../images/el-gallery-3.png";
+import img1 from "../images/el-gallery-1.svg";
+import img2 from "../images/el-gallery-2.svg";
+import img3 from "../images/el-gallery-3.svg";
 import img4 from "../images/el-gallery-4.png";
 import img5 from "../images/el-gallery-5.png";
 import img6 from "../images/el-gallery-6.png";
@@ -14,47 +14,109 @@ import img12 from "../images/el-gallery-12.png";
 import img13 from "../images/el-gallery-13.png";
 import img14 from "../images/el-gallery-14.png";
 import img15 from "../images/el-gallery-15.png";
-import img16 from "../images/el-gallery-16.png";
-import img17 from "../images/el-gallery-17.png";
 
-const Gallery = ({ img, name, animate }) => {
+const Gallery = () => {
+  const images = [
+    {
+      src: img1,
+      alt: "",
+    },
+    {
+      src: img2,
+      alt: "",
+    },
+    {
+      src: img3,
+      alt: "",
+    },
+    {
+      src: img4,
+      alt: "",
+    },
+    {
+      src: img5,
+      alt: "",
+    },
+    {
+      src: img6,
+      alt: "",
+    },
+    {
+      src: img7,
+      alt: "",
+    },
+    {
+      src: img8,
+      alt: "",
+    },
+    {
+      src: img9,
+      alt: "",
+    },
+    {
+      src: img10,
+      alt: "",
+    },
+    {
+      src: img11,
+      alt: "",
+    },
+    {
+      src: img12,
+      alt: "",
+    },
+    {
+      src: img13,
+      alt: "",
+    },
+    {
+      src: img14,
+      alt: "",
+    },
+    {
+      src: img15,
+      alt: "",
+    },
+  ];
+
+  // const Image = ({ img, name, animate }) => {
+  //   return <img src={img} className="shrink" alt={name} data-aos={animate} />;
+  // };
+
   const Image = () => {
-    return <img src={img} alt={name} data-aos={animate} />;
+    return (
+      <>
+        {images.map((img, index) => (
+          <li key={index}>
+            <img src={img.src} alt={img.alt} />
+          </li>
+        ))}
+      </>
+    );
   };
 
   return (
-    <section className="bg-elPurpleSec h-[100vh]" id="gallery">
-      <div className="gallery-row-one flex gap-[2rem]">
-        <Image img={img1} />.
-        <Image img={img2} />.
-        <Image img={img3} />.
-      </div>
-      <div className="gallery-row-two flex gap-[2rem]">
-        <Image img={img4} />.
-        <Image img={img5} />.
-        <Image img={img6} />.
-      </div>
-      <div className="gallery-row-three flex gap-[2rem]">
-        <Image img={img7} />.
-        <Image img={img8} />.
-        <Image img={img9} />.
-      </div>
-      <div className="gallery-row-four flex gap-[2rem]">
-        {" "}
-        <Image img={img10} />.
-        <Image img={img11} />.
-        <Image img={img12} />.
-      </div>
-      <div className="gallery-row-five flex gap-[2rem]">
-        <Image img={img13} />.
-        <Image img={img14} />.
-        <Image img={img15} />.
-      </div>
-      <div className="gallery-row-six flex gap-[2rem]">
-        <Image img={img16} />.
-        <Image img={img17} />.
-      </div>
-    </section>
+    <>
+      <section className="bg-elLilac w-full " id="gallery">
+        <div className="">
+          <p
+            className={`text-elPurple border-b-2 py-[2rem] border-inherit border-solid px-[5rem] text-3xl`}
+          >
+            Gallery
+          </p>
+          <h3
+            className={`text-center font-bold mt-[3rem] text-elPurple
+             text-[3.6rem]`}
+          >
+            Explore a <span className="text-elPurpleSec">Gallery</span> of some
+            of our past Projects
+          </h3>
+        </div>
+        <div className="p-[10rem] grid grid-cols-3 justify-items-center items-center gap-[3rem]">
+          <Image />
+        </div>
+      </section>
+    </>
   );
 };
 
