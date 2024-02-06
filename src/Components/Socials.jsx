@@ -34,8 +34,8 @@ const Socials = () => {
 
   return (
     <div className="flex flex-col gap-[3rem] text-3xl fixed bg-elPurple p-[2rem] z-10 bottom-[15%] shadow-2xl left-[5%] text-elLilac">
-      {socialMediaPages.map((page) => (
-        <a href={page.link}>{page.icon}</a>
+      {socialMediaPages.map((page, index) => (
+        <a href={page.link} key={index}>{page.icon}</a>
       ))}
     </div>
   );

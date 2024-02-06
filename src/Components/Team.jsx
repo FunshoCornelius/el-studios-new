@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
-import Samuel from "../images/samuel-el.png";
-import Faith from "../images/faith-el.png";
-import Cornelius from "../images/funsho-cornelius.png";
-import Joshua from "../images/joshua-el.png";
-import Chucks from "../images/chuks-el.png";
-import Paul from "../images/paul-okwerre-el.png";
-import Sphere from "../images/team-elipse.svg";
+import Samuel from "../images/team/samuel-el.png";
+import Faith from "../images/team/faith-el.png";
+import Cornelius from "../images/team/funsho-cornelius.png";
+import Joshua from "../images/team/joshua-el.png";
+import Chucks from "../images/team/chuks-el.png";
+import Paul from "../images/team/paul-okwerre-el.png";
+import Sphere from "../images/team/team-elipse.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import TeamHeader from "./TeamHeader";
 
 const Team = () => {
   useEffect(() => {
@@ -94,13 +95,7 @@ const Team = () => {
       }}
       className="p-[5rem] bg-cover mt-[15rem] h-[80vw] text-2xl"
     >
-      <h3
-        className="text-elPurple border-b font-bold text-7xl pb-[1rem] mb-[5rem]"
-        data-aos={"fade-right"}
-        data-aos-duration={"700"}
-      >
-        Meet The Team
-      </h3>
+      <TeamHeader heading={"Meet The Team"} color={"elPurple"} />
       <div className="">
         <div className="members-row-one">
           <SeniorOfficers />
