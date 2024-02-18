@@ -14,6 +14,7 @@ module.exports = {
       elReview: "#FFAFDF",
       elProduction: "#FF81FA",
       elDelivery: "#DDA7FF",
+      footerBg: "#69696A",
     },
   },
   plugins: [],

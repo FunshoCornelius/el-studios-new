@@ -7,14 +7,14 @@ const Hero = () => {
     Aos.init();
   }, []);
 
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleMouseEnter = () => {
     setIsHovered(true);
-    setDisplayedText(newHeroMessage);
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-    setDisplayedText(heroMessage);
   };
 
   const heroMessage = (
@@ -39,18 +39,15 @@ const Hero = () => {
     </h1>
   );
 
-  const [isHovered, setIsHovered] = useState(false);
-  const [displayedText, setDisplayedText] = useState(heroMessage);
-
   const Message = () => {
     return (
       <div
         data-aos="fade-in"
         className={`w-[50%] h-[40vh] transition duration-700 ${
-          isHovered === true ? "bg-elLilac text-elPurple" : ""
+          isHovered ? "bg-elLilac text-elPurple" : ""
         }`}
       >
-        {displayedText}
+        {isHovered ? newHeroMessage : heroMessage}
       </div>
     );
   };

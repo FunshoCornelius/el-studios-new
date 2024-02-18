@@ -3,9 +3,9 @@ import FooterContactInfo from "./FooterContactInfo";
 
 const FooterContactContainer = () => {
   return (
-    <div>
+    <div className="flex justify-between items-center">
       <FooterContactInfo />
-      <img src={require()} alt=""/>
+      <img src={require("../images/footer-illustration.svg").default} alt="" />
     </div>
   );
 };

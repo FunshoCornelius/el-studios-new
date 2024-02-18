@@ -86,7 +86,8 @@ body {
   grid-column: 7/9;
 }
 
-.process-container::-webkit-scrollbar {
+.process-container::-webkit-scrollbar,
+.testimonial::-webkit-scrollbar {
   display: none;
   scrollbar-width: none;
   -ms-overflow-style: none;

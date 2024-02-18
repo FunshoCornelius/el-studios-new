@@ -1,16 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import { IoMdMenu } from "react-icons/io";
 import NavigationLinks from "./NavigationLinks";
-// import { useRef } from "react";
-// import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const stylesArr = [
+    "fixed",
+    "w-[100%]",
+    "z-10",
+    "flex",
+    "justify-between",
+    "items-center",
+    "bg-elPurple",
+    "text-white",
+    "px-20",
+    "py-5",
+  ];
+
+  const styles = stylesArr.join(" ");
+
+  const [toggle, setToggle] = useState(true);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
-    <nav className=" fixed w-[100%] z-10 flex justify-between items-center  bg-elPurple text-white px-20 py-5">
+    <nav className={styles}>
       <Logo />
-      <NavigationLinks />
-      <IoMdMenu className="sm:hidden w-[1.8rem]" />
+      <NavigationLinks className={"hidden md:flex gap-[2rem]"} />
+      <IoMdMenu
+        onClick={handleToggle}
+        className="md:hidden w-[3rem] cursor-pointer"
+      />
     </nav>
   );
 };

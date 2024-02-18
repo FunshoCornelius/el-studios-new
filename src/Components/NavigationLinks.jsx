@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavigationLinks = () => {
+const NavigationLinks = ({ className }) => {
   const linkTitle = [
     {
       id: 1,
@@ -48,7 +48,7 @@ const NavigationLinks = () => {
     </li>
   ));
 
-  return <ul className="sm:flex gap-[2rem]  ">{Link}</ul>;
+  return <ul className={className}>{Link}</ul>;
 };
 
 export default NavigationLinks;
