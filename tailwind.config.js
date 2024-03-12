@@ -6,6 +6,7 @@ module.exports = {
     colors: {
       elPurple: "#1A0727",
       elLilac: "#C4B1D1",
+      elLilacTrans: "#C4B1D133",
       secColor: "#C65300",
       secColorVariant: "#BE2E00",
       white: "#ddd",

@@ -22,7 +22,7 @@ const Clients = () => {
   }, []);
 
   const clients = [
-    { id: 1, img: ror, alt: "Rapsody of Realities" },
+    { id: 1, img: near, alt: "Near Hub" },
     { id: 2, img: meta, alt: "Meta Card" },
     { id: 3, img: sf, alt: "Squared Financial" },
     { id: 4, img: para, alt: "Paradigm Initiative" },
@@ -33,7 +33,7 @@ const Clients = () => {
     { id: 9, img: oxygen, alt: "Oxygen Films" },
     { id: 10, img: lw, alt: "Love World" },
     { id: 11, img: lcc, alt: "Life Changers Church" },
-    { id: 12, img: near, alt: "Near Hub" },
+    { id: 12, img: ror, alt: "Rapsody of Realities" },
     { id: 13, img: vote, alt: "Vote023" },
   ];
 
@@ -44,30 +44,29 @@ const Clients = () => {
   };
 
   return (
-    <section id="clients" className="bg-elLilac relative">
+    <section id="clients" className="bg-elLilac overflow-hidden relative">
       <div className="">
         <p
-          className={`text-elPurple border-b-2 py-[2rem] border-inherit border-solid px-[5rem] text-3xl`}
+          className={`text-elPurple border-b-2 py-[2rem] border-inherit border-solid px-[2.5rem] md:px-[5rem] text-3xl`}
         >
           Clients
         </p>
         <h3
-          className={`text-center font-bold my-[3rem] px-[5rem] text-elPurple
-             text-[4rem]`}
+          className={`text-center font-bold md:my-[3rem] md:px-[5rem] text-elPurple md:text-[4rem] text-[2.4rem]`}
         >
           Think of us as shepherds who guides{" "}
           <span className="text-elPurpleSec">Industry giants</span> to the
           summit of product excellence
         </h3>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 h-[100vh] overflow-scroll justify-center items-center px-[10rem] py-[5rem] gap-[3rem]">
+      <div className="relative z-10 grid w-full md:grid-cols-2 lg:grid-cols-3 h-[100vh] overflow-scroll justify-center items-center px-[3rem] md:px-[10rem] py-[5rem] gap-[2rem]">
         <Client />
-        <img
-          src={bg}
-          className="absolute bottom-[-50%] left-[-10%] z-[-1]"
-          alt="background"
-        />
       </div>
+      <img
+        src={bg}
+        className="w-[60%] absolute bottom-[-50%] translate-y-[-50%]"
+        alt="background"
+      />
     </section>
   );
 };

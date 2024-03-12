@@ -15,7 +15,7 @@ const SectionHeader = ({ section, color, animate, heading }) => {
         {section}
       </p>
       <h3
-        className={`text-center font-bold mt-[3rem] text-${color} text-[3.6rem]`}
+        className={`text-center font-bold mt-[3rem] text-${color} text-[2rem] md:text-[3.6rem]`}
         data-aos={animate}
       >
         {heading}

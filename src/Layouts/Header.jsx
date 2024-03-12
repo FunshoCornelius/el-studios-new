@@ -10,7 +10,7 @@ const Header = () => {
       <Hero />
       <Socials
         className={
-          "flex flex-col gap-[3rem] absolute bottom-[10%] left-[5%] text-[3rem] bg-elPurple p-[2rem] shadow-2xl text-elLilac"
+          "flex md:flex-col gap-[3rem] absolute bottom-[10%]  md:left-[5%] left-[50%] translate-x-[-50%] md:text-[3rem] bg-elPurple p-[2rem] shadow-2xl text-elLilac"
         }
       />
     </header>

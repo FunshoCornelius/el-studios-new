@@ -34,7 +34,7 @@ const TeamTestimonialImages = () => {
     },
   ];
   return (
-    <div className="h-[60vh] flex flex-col items-end w-[30%] overflow-scroll testimonial">
+    <div className="h-[60vh] md:flex hidden flex-col items-end w-[30%] overflow-scroll testimonial">
       {imgArray.map((img) => (
         <div
           key={img.id}

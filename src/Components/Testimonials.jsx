@@ -5,7 +5,7 @@ import TeamTestimonialImages from "./TeamTestimonialImages";
 
 const Testimonials = () => {
   return (
-    <div className="bg-elPurple py-[10rem] px-[5rem]">
+    <div className="bg-elPurple py-[10rem] px-[2rem] md:px-[5rem]">
       <TeamHeader heading={"What They Said"} color={"elLilac"} />
       <div className="flex items-center gap-[10%] text-elLilac overflow-scroll justify-between">
         <TeamTestimonialMessage />

@@ -3,9 +3,13 @@ import FooterContactInfo from "./FooterContactInfo";
 
 const FooterContactContainer = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex mb-[2rem] md:flex-row flex-col-reverse justify-between items-center">
       <FooterContactInfo />
-      <img src={require("../images/footer-illustration.svg").default} alt="" />
+      <img
+        className="w-[50%] md:w-auto"
+        src={require("../images/footer-illustration.svg").default}
+        alt=""
+      />
     </div>
   );
 };

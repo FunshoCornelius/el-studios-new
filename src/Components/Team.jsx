@@ -13,14 +13,16 @@ import TeamHeader from "./TeamHeader";
 const Personels = ({ name, img, animate, role }) => {
   return (
     <figure
-      className="flex md:flex-col gap-5 items-center text-[1.4rem ] md:w-[25%]"
+      className="flex md:flex-col mb-[3rem] gap-5 items-center text-[1.4rem ] w-[100%] md:w-[25%]"
       data-aos={animate}
       data-aos-duration={"1500"}
     >
-      <img src={img} alt={name} />
+      <div className="w-[30%] ">
+        <img src={img} className="mx-auto w-[100%]" alt={name} />
+      </div>
       <div>
-        <h3 className="text-[1.4vw]">{name}</h3>
-        <p className="text-[0.9vw]">{role}</p>
+        <h3 className="md:text-[1.4vw] text-[3.5vw]">{name}</h3>
+        <p className="md:text-[0.9vw] text-[2.5vw]">{role}</p>
       </div>
     </figure>
   );
@@ -30,17 +32,17 @@ const SeniorOfficers = () => {
   return (
     <div className="md:flex justify-between md:text-center w-[100%]">
       <Personels
-        name={"Paul Okwerre"}
-        role="COO/Sound Engineer/Video Editor/Graphics Designer"
-        img={Paul}
-        animate={"fade-down-right"}
-      />
-      <Personels
         className="order-1"
         name={"Samuel Thompson George"}
         role="CEO/CG Generalist/ Animator/ VFX Artist/ Game Developer"
         img={Samuel}
         animate={"zoom-in"}
+      />
+      <Personels
+        name={"Paul Okwerre"}
+        role="COO/Sound Engineer/Video Editor/Graphics Designer"
+        img={Paul}
+        animate={"fade-down-right"}
       />
       <Personels
         name={"Chukwuma Nwokojie"}
@@ -54,7 +56,10 @@ const SeniorOfficers = () => {
 
 const MiddleLevelOfficers = () => {
   return (
-    <div className="md:flex justify-center gap-[10%]" data-aos={"zoom-in"}>
+    <div
+      className="md:flex lg:my-[5vw] justify-center gap-[10%]"
+      data-aos={"zoom-in"}
+    >
       <Personels
         name={"Joshua Mbaya"}
         role="Creative Director/CG Generalist"
@@ -96,11 +101,11 @@ const Team = () => {
         backgroundPosition: "center bottom",
         backgroundRepeat: "no-repeat",
       }}
-      className="p-[5rem] bg-cover mt-[15rem] md:h-[80vw] text-2xl"
+      className="md:px-[5rem] px-[2rem] bg-cover mt-[15rem] md:h-[80vw] text-2xl"
     >
       <TeamHeader heading={"Meet The Team"} color={"elPurple"} />
       <div className="">
-        <div className="">
+        <div className="h-max pb-[10rem]">
           <SeniorOfficers />
           <MiddleLevelOfficers />
           <JuniorLevelOfficer />

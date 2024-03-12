@@ -1,6 +1,6 @@
 import React from "react";
 
-const Process = () => {
+const Processes = () => {
   const processData = [
     {
       id: 1,
@@ -48,7 +48,7 @@ const Process = () => {
     <li
       style={{ backgroundColor: process.color }}
       key={process.id}
-      className={`gap-5 w-[33%] flex flex-col text-center rounded-lg px-[6rem] py-[6rem] justify-center items-center`}
+      className={`w-[100%] gap-5 md:w-[33%] flex flex-col text-center rounded-lg md:px-[6rem] py-[6rem] justify-center items-center`}
     >
       <img src={process.img} alt={process.name} />
       <h3 className={`font-bold text-[2.5rem]`}>{process.name}</h3>
@@ -57,4 +57,4 @@ const Process = () => {
   ));
 };
 
-export default Process;
+export default Processes;

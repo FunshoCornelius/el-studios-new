@@ -65,15 +65,15 @@ const TeamTestimonialMessage = () => {
   };
 
   return (
-    <div className="overflow-scroll h-[100vh] w-[70%] testimonial">
+    <div className="overflow-scroll h-[100vh] md:w-[70%] testimonial">
       {testimonialData.map((data, index) => (
         <div key={data.id}>
           <hr />
           <article
             onMouseEnter={() => handleMouseEvents(index, true)}
             onMouseLeave={() => handleMouseEvents(index, false)}
-            // style={}
-            className={`h-[60vh] flex items-start py-[3rem] mt-[3rem] rounded-lg bg-${
+            style={{ transform: `translateY(${data[index]} * 100)` }}
+            className={`h-[60vh] flex items-start md:py-[3rem] mt-[3rem] rounded-lg bg-${
               hoveredStates[index] ? "elLilac" : ""
             } text-${hoveredStates[index] ? "elPurple" : ""}`}
           >
@@ -82,11 +82,11 @@ const TeamTestimonialMessage = () => {
               alt="Big Quote"
             />
             <div className="flex flex-col justify-between h-[100%] py-[3rem]">
-              <h3 className="font-bold text-[4.5rem] leading-none ">
+              <h3 className="font-bold md:text-[4.5rem] text-[2.4rem] leading-none ">
                 {hoveredStates[index] ? data.message2 : data.message1}
               </h3>
               <div>
-                <h4 className="font-bold text-5xl">{data.fullName}</h4>
+                <h4 className="font-bold md:text-5xl">{data.fullName}</h4>
                 <p>{data.role}</p>
               </div>
             </div>

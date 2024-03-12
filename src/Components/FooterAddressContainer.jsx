@@ -4,7 +4,7 @@ import NavigationLinks from "./NavigationLinks";
 
 const FooterAddressContainer = () => {
   return (
-    <div className="flex justify-between items-center mt-[3rem]">
+    <div className="flex md:flex-row flex-col justify-between md:items-center mt-[3rem]">
       <FooterAddress />
       <div>
         <h3 className="font-bold">SITE MAPS</h3>

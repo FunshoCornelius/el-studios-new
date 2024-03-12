@@ -40,15 +40,13 @@ const NavigationLinks = ({ className }) => {
     },
   ];
 
-  const Link = linkTitle.map((link) => (
-    <li key={link.id}>
+  return linkTitle.map((link) => (
+    <li key={link.id} className={className}>
       <a href={`#${link.to}`} duration={500}>
         {link.name}
       </a>
     </li>
   ));
-
-  return <ul className={className}>{Link}</ul>;
 };
 
 export default NavigationLinks;

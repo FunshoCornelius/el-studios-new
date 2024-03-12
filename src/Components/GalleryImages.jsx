@@ -81,9 +81,12 @@ const images = [
 
 const GalleryImages = () => {
   return (
-    <div className="p-[10rem] grid grid-cols-8 justify-items-center items-center gap-y-[5rem] h-[100vh] overflow-scroll">
+    <div className="md:p-[10rem] p-[2rem] md:grid md:grid-cols-8 justify-items-center items-center gap-y-[5rem] h-[100vh] overflow-scroll">
       {images.map((img, index) => (
-        <li key={index} className={`list-none gallery_img-${index + 1}`}>
+        <li
+          key={index}
+          className={`list-none mb-[3rem] gallery_img-${index + 1}`}
+        >
           <img src={img.src} alt={img.alt} />
         </li>
       ))}

@@ -8,7 +8,7 @@ const ElGradientBg = () => {
   }, []);
 
   return (
-    <div className="bg-elPurple flex md:h-[100vh] justify-center items-center">
+    <div className="bg-elPurple flex h-[40vh] md:h-[100vh] justify-center items-center">
       <img
         className="w-[60%]"
         src={require("../images/el-studio-gradient.svg").default}

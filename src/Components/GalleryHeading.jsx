@@ -9,8 +9,7 @@ const GalleryHeading = () => {
         Gallery
       </p>
       <h3
-        className={`text-center font-bold my-[3rem] text-elPurple
-             text-[4rem]`}
+        className={`text-center font-bold my-[3rem] text-elPurple text-[2rem] md:text-[4rem]`}
       >
         Explore a <span className="text-elPurpleSec">Gallery</span> of some of
         our past Projects
