@@ -93,6 +93,23 @@ body {
   -ms-overflow-style: none;
 }
 
+.swiper-pagination {
+  position: static !important;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50% !important;
+  background-color: #c4b1d1 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #c65300 !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -12,6 +12,21 @@ const TeamTestimonialMessage = () => {
     },
     {
       id: 2,
+      fullName: "Chukwuma Nwokeoji",
+      role: "CCO/Cinematographer",
+      message1:
+        "El Studios has been my dream for years and that coming to pass was one of the happiest moments of my life",
+      message2: "I am the Chief Creative Officer",
+    },
+    {
+      id: 3,
+      fullName: "Joshua Mbaya",
+      role: "Creative Director/ CG Generalist",
+      message1: "Glad to be a part of the growing team at El Studios",
+      message2: "I am become Josh, The creator of worlds",
+    },
+    {
+      id: 4,
       fullName: "Paul Okwerre",
       role: "COO/Sound Engineer/Video Editor/Graphics Designer",
       message1:
@@ -20,26 +35,11 @@ const TeamTestimonialMessage = () => {
         'When Clients say the word "Just" to a creative, your next thought is "Dey play"  ',
     },
     {
-      id: 3,
-      fullName: "Chukwuma Nwokeoji",
-      role: "CCO/Cinematographer",
-      message1:
-        "El Studios has been my dream for years and that coming to pass was one of the happiest moments of my life",
-      message2: "I am the Chief Creative Officer",
-    },
-    {
-      id: 4,
+      id: 5,
       fullName: "Olatide Faith",
       role: "Chief Operating Officer",
       message1: "I have no words",
       message2: "Why use words when you can shoot",
-    },
-    {
-      id: 5,
-      fullName: "Joshua Mbaya",
-      role: "Creative Director/ CG Generalist",
-      message1: "Glad to be a part of the growing team at El Studios",
-      message2: "I am become Josh, The creator of worlds",
     },
     {
       id: 6,
@@ -73,7 +73,7 @@ const TeamTestimonialMessage = () => {
             onMouseEnter={() => handleMouseEvents(index, true)}
             onMouseLeave={() => handleMouseEvents(index, false)}
             style={{ transform: `translateY(${data[index]} * 100)` }}
-            className={`h-[60vh] flex items-start md:py-[3rem] mt-[3rem] rounded-lg bg-${
+            className={`md:h-[70vh] h-[40vh] flex items-start md:py-[3rem] mt-[3rem] rounded-lg bg-${
               hoveredStates[index] ? "elLilac" : ""
             } text-${hoveredStates[index] ? "elPurple" : ""}`}
           >

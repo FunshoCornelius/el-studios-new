@@ -17,7 +17,7 @@ const Personels = ({ name, img, animate, role }) => {
       data-aos={animate}
       data-aos-duration={"1500"}
     >
-      <div className="w-[30%] ">
+      <div className="md:w-[50%] w-[20%] ">
         <img src={img} className="mx-auto w-[100%]" alt={name} />
       </div>
       <div>
@@ -30,7 +30,7 @@ const Personels = ({ name, img, animate, role }) => {
 
 const SeniorOfficers = () => {
   return (
-    <div className="md:flex justify-between md:text-center w-[100%]">
+    <div className="md:flex justify-between r w-[100%]">
       <Personels
         className="order-1"
         name={"Samuel Thompson George"}
@@ -39,9 +39,9 @@ const SeniorOfficers = () => {
         animate={"zoom-in"}
       />
       <Personels
-        name={"Paul Okwerre"}
-        role="COO/Sound Engineer/Video Editor/Graphics Designer"
-        img={Paul}
+        name={"Joshua Mbaya"}
+        role="Creative Director/CG Generalist"
+        img={Joshua}
         animate={"fade-down-right"}
       />
       <Personels
@@ -61,9 +61,9 @@ const MiddleLevelOfficers = () => {
       data-aos={"zoom-in"}
     >
       <Personels
-        name={"Joshua Mbaya"}
-        role="Creative Director/CG Generalist"
-        img={Joshua}
+        name={"Paul Okwerre"}
+        role="COO/Sound Engineer/Video Editor/Graphics Designer"
+        img={Paul}
         animate={"fade-right"}
       />
       <Personels
@@ -105,7 +105,7 @@ const Team = () => {
     >
       <TeamHeader heading={"Meet The Team"} color={"elPurple"} />
       <div className="">
-        <div className="h-max pb-[10rem]">
+        <div className="h-max md:text-center pb-[15rem]">
           <SeniorOfficers />
           <MiddleLevelOfficers />
           <JuniorLevelOfficer />

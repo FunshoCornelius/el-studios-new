@@ -10,7 +10,7 @@ const Process = () => {
         section={"PROCESS"}
         color={"elLilac"}
         heading={
-          "We follow a streamlined a process to ensure we deliver high-quality work that meets your expectations:"
+          "We follow a streamlined process to ensure we deliver high-quality work that meets your expectations:"
         }
       />
       <ProcessContainer />

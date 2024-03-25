@@ -1,6 +1,6 @@
 import React from "react";
 import About from "../Layouts/About";
-// import Services from "../Layouts/Services";
+import Services from "../Layouts/Services";
 import Gallery from "../Layouts/Gallery";
 import Pricing from "../Layouts/Pricing";
 import Clients from "../Layouts/Clients";
@@ -12,12 +12,11 @@ const Main = () => {
     <main>
       <About />
       <ElGradientBg />
-      {/* <Services /> */}
+      <Services />
       <Clients />
       <Gallery />
       <Process />
       <Pricing />
-      <ElGradientBg />
     </main>
   );
 };

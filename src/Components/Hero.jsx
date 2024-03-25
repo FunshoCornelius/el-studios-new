@@ -30,7 +30,7 @@ const Hero = () => {
             isHovered ? "bg-elLilac text-elPurple" : ""
           } transition duration-700 ease-out text-7xl py-[5rem] px-[1rem] cursor-default md:text-9xl text-center font-bold`}
         >
-          {isHovered ? "El-EEVATE YOUR BRAND WITH US" : "WELCOME TO "}
+          {isHovered ? "EL-EVATE YOUR BRAND WITH US" : "WELCOME TO "}
           <br />
           <span className="text-secColor">{isHovered ? "" : "EL-STUDIOS"}</span>
         </h1>
@@ -43,7 +43,7 @@ const Hero = () => {
       className={`md:h-[100vh] flex justify-center zoom-out items-center text-white `}
       data-aos={"fade-in"}
     >
-      <div className={` my-auto w-[90%] md:w-[60%]`}>
+      <div className={` my-auto w-[90%] md:w-[35%]`}>
         <Message />
       </div>
     </div>

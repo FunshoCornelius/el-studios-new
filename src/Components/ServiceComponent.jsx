@@ -1,11 +1,11 @@
 import React from "react";
 
-const ServiceComponent = ({ name, description, img }) => {
+const ServiceComponent = ({ name, opacity, description, img }) => {
   return (
-    <figure className="flex flex-col items-center basis-1/2 gap-[2rem] text-justify">
-      <img src={img} alt={name} />
-      <h3 className="font-700">{name}</h3>
-      <p>{description}</p>
+    <figure className="flex flex-col  text-elLilac w-full items-center gap-[2rem] text-justify">
+      <div className="w-full h-[30%]">
+        <img src={img} className="w-full" alt={name} width={"100%"} />
+      </div>
     </figure>
   );
 };

@@ -5,11 +5,7 @@ const FooterAddress = () => {
   return (
     <div>
       <Logo className={""} />
-      <p className="my-[2rem]">
-        16, Kehinde Lawrence Street
-        <br /> Beckley Estate, <br />
-        Ifako-Ijaiye, Lagos Nigeria{" "}
-      </p>
+      <p className="my-[2rem]">3 Ayoka Close Agege Lagos </p>
     </div>
   );
 };

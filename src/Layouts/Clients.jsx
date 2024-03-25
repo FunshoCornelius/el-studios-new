@@ -39,7 +39,13 @@ const Clients = () => {
 
   const Client = () => {
     return clients.map(({ img, alt, id }) => (
-      <img src={img} alt={alt} key={id} data-aos={"zoom-in"} />
+      <img
+        className="w-full"
+        src={img}
+        alt={alt}
+        key={id}
+        data-aos={"zoom-in"}
+      />
     ));
   };
 

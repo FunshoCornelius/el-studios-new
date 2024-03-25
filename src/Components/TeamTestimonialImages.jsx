@@ -9,24 +9,25 @@ const TeamTestimonialImages = () => {
     },
     {
       id: 2,
-      img: require("../images/testimonials/paul-testimonial.png"),
-      alt: "Paul Okwerre",
-    },
-    {
-      id: 3,
       img: require("../images/testimonials/chucks-testimonial.png"),
       alt: "Chucks Nwokeoji",
     },
     {
-      id: 4,
-      img: require("../images/testimonials/faith-testimonial.png"),
-      alt: "Olatide Faith",
-    },
-    {
-      id: 5,
+      id: 3,
       img: require("../images/testimonials/joshua-testimonial.png"),
       alt: "Joshua Mbaya",
     },
+    {
+      id: 4,
+      img: require("../images/testimonials/paul-testimonial.png"),
+      alt: "Paul Okwerre",
+    },
+    {
+      id: 5,
+      img: require("../images/testimonials/faith-testimonial.png"),
+      alt: "Olatide Faith",
+    },
+
     {
       id: 6,
       img: require("../images/testimonials/cornelius-testimonial.png"),
