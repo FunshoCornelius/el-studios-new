@@ -10,10 +10,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import TeamHeader from "./TeamHeader";
 
-const Personels = ({ name, img, animate, role }) => {
+const Personels = ({ order, name, img, animate, role }) => {
   return (
     <figure
-      className="flex md:flex-col mb-[3rem] gap-5 items-center text-[1.4rem ] w-[100%] md:w-[25%]"
+      className={`${order} flex md:flex-col mb-[3rem] gap-5 items-center text-[1.4rem ] w-[100%] md:w-[25%]`}
       data-aos={animate}
       data-aos-duration={"1500"}
     >
@@ -30,21 +30,23 @@ const Personels = ({ name, img, animate, role }) => {
 
 const SeniorOfficers = () => {
   return (
-    <div className="md:flex justify-between r w-[100%]">
+    <div className="flex md:flex-row flex-col justify-between w-[100%]">
       <Personels
-        className="order-1"
-        name={"Samuel Thompson George"}
-        role="CEO/CG Generalist/ Animator/ VFX Artist/ Game Developer"
-        img={Samuel}
-        animate={"zoom-in"}
-      />
-      <Personels
+        order={"order-2 md:order-none"}
         name={"Joshua Mbaya"}
         role="Creative Director/CG Generalist"
         img={Joshua}
         animate={"fade-down-right"}
       />
       <Personels
+        order={"order-1 md:order-none"}
+        name={"Samuel Thompson George"}
+        role="CEO/CG Generalist/ Animator/ VFX Artist/ Game Developer"
+        img={Samuel}
+        animate={"zoom-in"}
+      />
+      <Personels
+        order={"order-3 md:order-none"}
         name={"Chukwuma Nwokojie"}
         role="CCO/Cinematographer"
         img={Chucks}
